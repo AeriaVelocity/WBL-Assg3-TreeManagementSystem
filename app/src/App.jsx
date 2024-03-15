@@ -3,7 +3,6 @@ import './App.css';
 
 function App() {
     const [data, setData] = useState({});
-    const [error, setError] = useState(null);
 
     useEffect(() => {
         fetchData();
@@ -20,14 +19,25 @@ function App() {
         }
         catch (error) {
             console.error('Error fetching data:', error);
-            setError('Error fetching data. Please try again later.');
         }
     };
 
     return (
         <div className="App">
-            <h1>Tree Management System</h1>
-            <h2>Web App</h2>
+            <h1>Tree Management System - Web App</h1>
+            <div>
+                <h2>{data.name}</h2>
+                {data.trees && data.trees.length > 0 ? (
+                    data.trees.map((tree) => (
+                        <div id="tree-block">
+                            <h3>{tree.name} tree</h3>
+                            <p>{tree.species} - {tree.age} years old</p>
+                        </div>
+                    )) 
+                ):(
+                    <p>No Tree Data</p>
+                )}
+            </div>
         </div>
     );
 }

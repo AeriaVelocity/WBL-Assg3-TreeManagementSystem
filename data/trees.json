@@ -1,0 +1,29 @@
+{
+    "name": "Tree Data",
+    "trees": [
+        {
+            "id": 1,
+            "name": "Apple",
+            "species": "Malus domestica",
+            "age": 10
+        },
+        {
+            "id": 2,
+            "name": "Oak",
+            "species": "Quercus robur",
+            "age": 45
+        },
+        {
+            "id": 3,
+            "name": "Pine",
+            "species": "Pinus strobus",
+            "age": 20
+        },
+        {
+            "id": 4,
+            "name": "Cedar",
+            "species": "Cedrus",
+            "age": 12
+        }
+    ]
+}
