@@ -26,16 +26,8 @@ function App() {
 
     return (
         <div className="App">
-            <h1>React App w/ Node</h1>
-            {error ? (
-                <div className="error">{error}</div>
-            ) : (
-                <>
-                    <p>Data from server</p>
-                    <hr />
-                    <pre>{JSON.stringify(data, null, 2)}</pre>
-                </>
-            )}
+            <h1>Tree Management System</h1>
+            <h2>Web App</h2>
         </div>
     );
 }
