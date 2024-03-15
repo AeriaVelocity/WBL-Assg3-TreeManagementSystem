@@ -30,6 +30,8 @@ function App() {
                 {data.trees && data.trees.length > 0 ? (
                     data.trees.map((tree) => (
                         <div id="tree-block">
+                            <img src={tree.image} />
+                            <p>Image licensed under {tree.imageLicense}. <a href={tree.imageLicenseUrl}>View the full licence.</a></p>
                             <h3>{tree.name} tree</h3>
                             <p>{tree.species} - {tree.age} years old</p>
                         </div>
