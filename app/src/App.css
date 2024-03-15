@@ -4,6 +4,7 @@
 }
 
 body {
+    margin: 20px;
     background-color: aliceblue;
 }
 
@@ -15,4 +16,17 @@ body {
 }
 #tree-block:hover {
     background-color: #7fffd450;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background-color: #333;
+    }
+    #tree-block {
+        background-color: #379777;
+    }
+    #tree-block:hover {
+        background-color: #37977750;
+    }
 }
