@@ -1,32 +1,170 @@
-.App {
-    margin: auto;
-    max-width: 900px;
-}
-
+/* General styles */
 body {
     margin: 20px;
     background-color: aliceblue;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 18px;
 }
 
+a {
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    text-decoration: none;
+    color: green;
+}
+
+/* Header styles */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* Main content styles */
+#main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 20px;
+    height: 100vh;
+}
+
+/* Client info styles */
+#client-info {
+    line-height: 1;
+}
+
+#selected-tree p {
+    width: min-content;
+}
+
+/* Tree block styles */
 #tree-block {
     margin-bottom: 10px;
     background-color: #7fffd4;
     padding: 20px 40px;
     transition: background-color 0.3s ease;
-}
-#tree-block:hover {
-    background-color: #7fffd450;
+    display: flex;
 }
 
+#tree-block:hover {
+    background-color: #55ffc6;
+}
+
+#tree-block:active {
+    background-color: #7fffd4;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+}
+
+button {
+    font-family: inherit;
+    font-size: inherit;
+    margin: 5px;
+    background-color: #7fffd4;
+    color: #333;
+    border: none;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #55ffc6;
+}
+
+button:active {
+    background-color: #7fffd4;
+}
+
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    margin: 5px;
+    background-color: #7fffd4;
+    color: #333;
+    border: none;
+    padding: 20px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    min-height: 60px;
+    resize: vertical;
+}
+
+textarea:hover {
+    background-color: #55ffc6;
+}
+
+#tree-block img {
+    width: 175px;
+    height: tree-data height;
+    object-fit: cover;
+    margin-right: 28px;
+    transition: transform 0.3s ease, border-radius 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for tree block image */
+#tree-block:hover img {
+    transform: scale(1.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#tree-block:active img {
+    transform: scale(0.9);
+    border-radius: 20px;
+    box-shadow: initial;
+}
+
+/* Dark mode styles */
 @media (prefers-color-scheme: dark) {
     body {
         color: #eee;
         background-color: #333;
     }
+
+    a:hover {
+        color: #7fffd4;
+    }
+
     #tree-block {
         background-color: #379777;
     }
+
     #tree-block:hover {
+        background-color: #37977750;
+    }
+
+    button {
+        color: #eee;
+        background-color: #379777;
+    }
+
+    button:hover {
+        background-color: #37977750;
+    }
+
+    button:active {
+        background-color: #379777;
+    }
+
+    textarea {
+        color: #eee;
+        background-color: #379777;
+    }
+
+    textarea:hover {
         background-color: #37977750;
     }
 }

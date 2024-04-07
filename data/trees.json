@@ -1,41 +1,114 @@
 {
+  "treeData": {
     "name": "Tree Data",
     "trees": [
-        {
-            "id": 1,
-            "name": "Apple",
-            "species": "Malus domestica",
-            "age": 10,
-            "image": "/images/apple-tree.jpg",
-            "imageLicense": "CC BY 2.0",
-            "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.0/"
-        },
-        {
-            "id": 2,
-            "name": "Oak",
-            "species": "Quercus robur",
-            "age": 45,
-            "image": "/images/oak-tree.png",
-            "imageLicense": "NULL",
-            "imageLicenseUrl": "https://example.com"
-        },
-        {
-            "id": 3,
-            "name": "Pine",
-            "species": "Pinus strobus",
-            "age": 20,
-            "image": "/images/pine-tree.png",
-            "imageLicense": "NULL",
-            "imageLicenseUrl": "https://example.com"
-        },
-        {
-            "id": 4,
-            "name": "Cedar",
-            "species": "Cedrus",
-            "age": 12,
-            "image": "/images/cedar-tree.png",
-            "imageLicense": "NULL",
-            "imageLicenseUrl": "https://example.com"
-        }
+      {
+        "id": 1,
+        "name": "Apple",
+        "species": "Malus domestica",
+        "description": "The apple is a deciduous tree, generally standing 2 to 4.5 metres (6 to 15 feet) tall in cultivation and up to 9 m (30 ft) in the wild. When cultivated, the size, shape and branch density are determined by rootstock selection and trimming method. The leaves are alternately arranged dark green-colored simple ovals with serrated margins and slightly downy undersides. (Wikipedia)",
+        "age": 10,
+        "status": "Good",
+        "detailedStatus": "This tree has recently been assessed and is in good condition. There is no cause for concern.",
+        "lastAssessed": "2024-03-19",
+        "lastAssessedBy": "John Doe",
+        "location": "Totally Real Nature Reserve, St Albans, Hertfordshire, England",
+        "image": "/images/apple-tree.jpg",
+        "imageLicense": "CC BY 2.0",
+        "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "comments": [
+          {
+            "comment": "No one",
+            "timestamp": "2024-03-27T13:38:28.582Z"
+          },
+          {
+            "comment": "Devil",
+            "timestamp": "2024-03-27T10:38:32.613Z"
+          },
+          {
+            "comment": "I hope you're prepared for the devil",
+            "timestamp": "2024-03-27T10:38:40.617Z"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Oak",
+        "species": "Quercus robur",
+        "description": "An oak is a hardwood tree or shrub in the genus Quercus of the beech family. They have spirally arranged leaves, often with lobed edges, and a nut called an acorn, borne within a cup. The genus is widely distributed in the Northern Hemisphere; it includes some 500 species, both deciduous and evergreen. Fossil oaks date back to the Middle Eocene. Molecular phylogeny shows that the genus is divided into Old World and New World clades, but many oak species hybridise freely, making the genus's history difficult to resolve. (Wikipedia)",
+        "age": 45,
+        "status": "Not Assessed",
+        "detailedStatus": "This tree has not received an assessment in over 6 months. Please contact the park administration to have it assessed.",
+        "lastAssessed": "2023-07-18",
+        "lastAssessedBy": "Automated System",
+        "location": "Totally Real Nature Reserve, St Albans, Hertfordshire, England",
+        "image": "/images/oak-tree.jpg",
+        "imageLicense": "CC BY-ND 2.0",
+        "imageLicenseUrl": "https://creativecommons.org/licenses/by-nd/2.0/",
+        "comments": [
+          {
+            "comment": "I noticed there was a bit of a fungal infection, can one of the admins look at that?",
+            "timestamp": "2024-03-27T10:57:03.847Z"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Pine",
+        "species": "Pinus strobus",
+        "description": "Pine trees are evergreen, coniferous resinous trees (or, rarely, shrubs) growing 3–80 metres (10–260 feet) tall, with the majority of species reaching 15–45 m (50–150 ft) tall. (Wikipedia)",
+        "age": 20,
+        "status": "Warning",
+        "detailedStatus": "The tree has some branches broken off. Can we get someone to look at that? Thanks -Tom",
+        "lastAssessed": "2024-03-21",
+        "lastAssessedBy": "Thomas Stone",
+        "location": "Totally Real Nature Reserve, St Albans, Hertfordshire, England",
+        "image": "/images/pine-tree.jpg",
+        "imageLicense": "CC BY-SA 2.0",
+        "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "comments": [
+          {
+            "comment": "I like this tree",
+            "timestamp": "2024-03-27T10:56:28.595Z"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "name": "Cedar",
+        "species": "Cedrus",
+        "description": "Cedrus, with the common English name cedar, is a genus of coniferous trees in the plant family Pinaceae (subfamily Abietoideae). They are native to the mountains of the western Himalayas and the Mediterranean region, occurring at altitudes of 1,500–3,200 m in the Himalayas and 1,000–2,200 m in the Mediterranean. (Wikipedia)",
+        "age": 12,
+        "status": "Good",
+        "detailedStatus": "Yes, the tree's perfectly fine. It's been checked thoroughly and is in perfect condition.",
+        "lastAssessed": "2024-03-19",
+        "lastAssessedBy": "Alan Smith",
+        "location": "Totally Real Nature Reserve, St Albans, Hertfordshire, England",
+        "image": "/images/cedar-tree.jpg",
+        "imageLicense": "CC BY 2.0",
+        "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "comments": [
+          {
+            "comment": "This tree looks so puntable",
+            "timestamp": "2024-03-27T10:57:13.672Z"
+          }
+        ]
+      }
     ]
+  },
+  "clientInfo": {
+    "name": "Client Information",
+    "nameOfBusiness": "Totally Real Nature Reserve",
+    "address": "Totally Real Nature Reserve, St Albans, Hertfordshire, England",
+    "mainAdmin": "Samuel Young",
+    "contributors": [
+      "Samuel Young",
+      "John Doe",
+      "Thomas Stone",
+      "Alan Smith"
+    ],
+    "telephone": "01234 567 890",
+    "email": "nqgJp@example.com",
+    "website": "https://www.totallyrealnaturereserve.org.uk"
+  }
 }
