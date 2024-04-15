@@ -22,6 +22,10 @@ This is a client-server web application that enables administrators to supply,
 update and report on trees in a specific nature reserve, and allows members of
 the public to make anonymous comments on these trees.
 
+As this is a client-server application with a separate client application, and
+a separate server, this application cannot be hosted on GitHub Pages. Please
+clone or download the repository and follow [Getting Started](#getting-started).
+
 ## Getting Started
 
 You need `npm` and `node` to run this project. You can install them from the
